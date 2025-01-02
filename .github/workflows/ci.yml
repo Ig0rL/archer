@@ -22,18 +22,14 @@ jobs:
           node-version: 20.11.0
           cache: 'yarn'
 
-      # Install dependencies
       - name: Install dependencies
         run: yarn install
 
-      # Run linting
       - name: Lint code
         run: yarn lint
 
-      # Build the project
       - name: Build project
         run: yarn build
 
-      # Run tests
       - name: Run tests
         run: yarn test
