@@ -1,5 +1,3 @@
-import { VectorService } from '@/commands/vector/vector.service';
-
 export interface IRotatable {
 	getDirection(): number;
 	getAngularVelocity(): number;

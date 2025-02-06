@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { RotateService } from './rotate.service';
-import { VectorModule } from '@/commands/vector/vector.module';
 import { RotationAdapter } from '@/commands/rotate/rotation.adapter';
 
 @Module({

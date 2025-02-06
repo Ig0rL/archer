@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { RotateService } from './rotate.service';
 import { RotationAdapter } from '@/commands/rotate/rotation.adapter';
-import { MovingAdapter } from '@/commands/move/moving.adapter';
 
 describe('RotateService', () => {
   let rotateService: RotateService;
