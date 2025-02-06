@@ -1,11 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from '@/app.controller';
-import { AppService } from '@/app.service';
 import { QuadraticEquationModule } from './quadratic-equation/quadratic-equation.module';
+import { CommandsModule } from './commands/commands.module';
 
 @Module({
-	imports: [QuadraticEquationModule],
-	controllers: [AppController],
-	providers: [AppService],
+	imports: [QuadraticEquationModule, CommandsModule],
 })
 export class AppModule {}
