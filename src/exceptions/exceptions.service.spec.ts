@@ -5,6 +5,8 @@ import { ExceptionsService } from '@/exceptions/exceptions.service';
 import { RetryCommandService } from '@/commands/queue-command/retry-command.service';
 import { LogCommandService } from '@/commands/queue-command/log-command.service';
 import { RetryTwoCommandService } from '@/commands/queue-command/retry-two-command.service';
+import { ExceptionsModule } from '@/exceptions/exceptions.module';
+import { QueueCommandModule } from '@/commands/queue-command/queue-command.module';
 
 class TestCommand implements ICommands {
 	execute() {
@@ -20,6 +22,7 @@ describe('ExceptionsService', () => {
 
 	beforeEach(async () => {
 		const moduleRef: TestingModule = await Test.createTestingModule({
+			imports: [ExceptionsModule, QueueCommandModule],
 			providers: [QueueCommandService, ExceptionsService],
 		}).compile();
 
