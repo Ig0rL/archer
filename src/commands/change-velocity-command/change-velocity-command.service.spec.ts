@@ -33,7 +33,7 @@ describe('ChangeVelocityCommandService', () => {
     changeVelocityCommandAdapter.getCurrentAngel = jest.fn().mockReturnValue(45);
     
     // Вызываем setVelocity, чтобы пересчитать скорость
-    changeVelocityCommandAdapter.setVelocity();
+    changeVelocityCommandService.execute();
     
     // Проверяем, что новая скорость рассчитана корректно
     const expectedVelocity = {
