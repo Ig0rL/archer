@@ -107,14 +107,10 @@ describe('IocContainer', () => {
 				const mock = {
 					on: jest.fn((event, callback) => {
 						if (event === 'message') {
-							setTimeout(
-								() =>
-									callback({
-										type: 'result',
-										result: new MockCommand('worker'),
-									}),
-								0,
-							);
+							callback({
+								type: 'result',
+								result: new MockCommand('worker'),
+							});
 						}
 						return mock;
 					}),
