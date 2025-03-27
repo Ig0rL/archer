@@ -10,15 +10,17 @@ import { MacroCommandService } from '@/commands/macro-command/macro-command.serv
 export class RotateChangeVelocityMacroService implements ICommands {
 	private readonly rotateService: RotateService;
 	private readonly changeVelocityCommandService: ChangeVelocityCommandService;
-	
+
 	constructor(
 		private readonly rotateAdapter: RotationAdapter,
 		private readonly changeVelocityCommandAdapter: ChangeVelocityCommandAdapter,
 	) {
 		this.rotateService = new RotateService(this.rotateAdapter);
-		this.changeVelocityCommandService = new ChangeVelocityCommandService(this.changeVelocityCommandAdapter);
+		this.changeVelocityCommandService = new ChangeVelocityCommandService(
+			this.changeVelocityCommandAdapter,
+		);
 	}
-	
+
 	execute() {
 		const macroCommandService = new MacroCommandService([
 			this.rotateService,

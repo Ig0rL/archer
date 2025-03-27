@@ -6,8 +6,8 @@ import { MacroCommandModule } from '@/commands/macro-command/macro-command.modul
 import { ExceptionsModule } from '@/exceptions/exceptions.module';
 
 @Module({
-  imports: [MoveModule, FuelModule, MacroCommandModule, ExceptionsModule],
-  providers: [MoveFuelMacroService],
-  exports: [MoveFuelMacroService],
+	imports: [MoveModule, FuelModule, MacroCommandModule, ExceptionsModule],
+	providers: [MoveFuelMacroService],
+	exports: [MoveFuelMacroService],
 })
 export class MoveFuelMacroModule {}

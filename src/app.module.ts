@@ -6,6 +6,12 @@ import { QueueCommandModule } from '@/commands/queue-command/queue-command.modul
 import { IocContainerModule } from './ioc-container/ioc-container.module';
 
 @Module({
-	imports: [QuadraticEquationModule, CommandsModule, ExceptionsModule, QueueCommandModule, IocContainerModule],
+	imports: [
+		QuadraticEquationModule,
+		CommandsModule,
+		ExceptionsModule,
+		QueueCommandModule,
+		IocContainerModule,
+	],
 })
 export class AppModule {}

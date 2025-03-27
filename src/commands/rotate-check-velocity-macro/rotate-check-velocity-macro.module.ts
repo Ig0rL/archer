@@ -5,7 +5,7 @@ import { ChangeVelocityCommandModule } from '@/commands/change-velocity-command/
 import { MacroCommandModule } from '@/commands/macro-command/macro-command.module';
 
 @Module({
-  imports: [RotateModule, ChangeVelocityCommandModule, MacroCommandModule],
-  providers: [RotateChangeVelocityMacroService]
+	imports: [RotateModule, ChangeVelocityCommandModule, MacroCommandModule],
+	providers: [RotateChangeVelocityMacroService],
 })
 export class RotateCheckVelocityMacroModule {}
