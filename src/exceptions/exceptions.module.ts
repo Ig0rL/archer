@@ -6,8 +6,8 @@ import { CommandException } from '@/exceptions/comman-exception';
 	providers: [
 		ExceptionsService,
 		CommandException,
-		{ provide: 'MESSAGE', useValue: ''},
-		{ provide: 'EXCEPTION-NAME', useValue: ''},
+		{ provide: 'MESSAGE', useValue: '' },
+		{ provide: 'EXCEPTION-NAME', useValue: '' },
 	],
 	exports: [ExceptionsService, CommandException],
 })

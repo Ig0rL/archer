@@ -5,11 +5,11 @@ import { ChangeVelocityCommandAdapter } from '@/commands/change-velocity-command
 @Injectable()
 export class ChangeVelocityCommandService implements ICommands {
 	private velocity: ChangeVelocityCommandAdapter;
-	
+
 	constructor(velocity: ChangeVelocityCommandAdapter) {
 		this.velocity = velocity;
 	}
-	
+
 	execute() {
 		this.velocity.setVelocity();
 	}
