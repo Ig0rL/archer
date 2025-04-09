@@ -51,15 +51,10 @@ export class AdapterGeneratorService {
 		);
 		
 		for (const methodName of methodNames) {
-			const returnType = Reflect.getMetadata('design:returntype', prototype, methodName);
-			const paramTypes = Reflect.getMetadata('design:paramtypes', prototype, methodName) || [];
 			methods.push({
 				name: methodName,
 				returnType: '',
-				params: paramTypes.map((type: any, index: number) => ({
-					name: `param${index}`,
-					type: type?.name || 'any',
-				})),
+				params: [],
 			});
 		}
 		return methods;
