@@ -7,16 +7,19 @@ import { VectorService } from '@/commands/vector/vector.service';
 import { MovingAdapter } from '@/commands/move/moving.adapter';
 import { MoveService } from '@/commands/move/move.service';
 import { FastMoveScopeWorker } from '@/ioc-container/fastMoveScopeWorker';
+import { AdapterGeneratorService } from '@/ioc-container/adapter-generator.service';
+import { IMovable } from '@/commands/move/movable.interface';
 
 @Module({
 	imports: [VectorModule, MoveModule],
-	providers: [IocContainer, FastMoveScopeWorker],
-	exports: [IocContainer],
+	providers: [IocContainer, FastMoveScopeWorker, AdapterGeneratorService],
+	exports: [IocContainer, AdapterGeneratorService],
 })
 export class IocContainerModule implements OnModuleInit {
 	constructor(
 		private readonly ioc: IocContainer,
 		private worker: FastMoveScopeWorker,
+		private adapterGenerator: AdapterGeneratorService,
 	) {
 		// Регистрация VectorService
 		this.ioc
@@ -96,5 +99,33 @@ export class IocContainerModule implements OnModuleInit {
 			...adapterArgs,
 		);
 		console.log('Обновленная позиция из воркера:', fastMoveResult);
+		
+		this.ioc
+			.resolve<ICommands>('IoC.Register', 'Adapter.Generate', (...args: any[]) => {
+				console.log('Args in Adapter.Generate factory:', args); // Отладка
+				const [interfaceImpl] = args;
+				return { execute: () => this.adapterGenerator.generateAdapter(interfaceImpl) };
+			})
+			.execute();
+		
+		// Генерация адаптера для IMovable с отладкой
+		console.log('Calling Adapter.Generate with:', MovableImpl, 'IMovable');
+		this.ioc
+			.resolve<ICommands>('Adapter.Generate', MovableImpl, 'IMovable')
+			.execute();
+	}
+}
+
+export class MovableImpl implements IMovable {
+	getLocation(): VectorService {
+		throw new Error('Not implemented');
+	}
+	
+	setLocation(position: VectorService): void {
+		throw new Error('Not implemented');
+	}
+	
+	getVelocity(): VectorService {
+		throw new Error('Not implemented');
 	}
 }
