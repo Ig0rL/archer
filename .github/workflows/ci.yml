@@ -23,7 +23,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --verbose
 
       - name: Lint code
         run: yarn lint
