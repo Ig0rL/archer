@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -22,7 +22,8 @@ jobs:
           node-version: 20.11.0
 
       - name: Install dependencies
-        run: yarn install --ignore-scripts --network-timeout 300000 --verbose
+        run: yarn install --ignore-scripts --network-timeout 600000 --verbose --no-cache
+        timeout-minutes: 20
 
       - name: Lint code
         run: yarn lint
