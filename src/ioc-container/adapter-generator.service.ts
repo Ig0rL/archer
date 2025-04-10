@@ -8,7 +8,7 @@ export class AdapterGeneratorService {
 	constructor(private iocContainer: IocContainer) {}
 	
 	public generateAdapter(data: any): void {
-		const [interfaceImpl, interfaceName, dep] = data;
+		const [interfaceImpl, interfaceName] = data;
 		
 		if (!interfaceName || typeof interfaceName !== 'string') {
 			throw new Error('interfaceName должен быть строкой');
@@ -61,7 +61,7 @@ export class AdapterGeneratorService {
 	}
 	
 	private generateAdapterCode(data: string, methods: MethodInfo[]): string {
-		const [interfaceClass, interfaceName] = data
+		const [interfaceName] = data
 		const adapterName = this.getAdapterName(interfaceName);
 		const interfacePath = `${interfaceName.toLowerCase()}.interface`.substring(1);
 		let code = `import { Injectable } from '@nestjs/common';\n`;

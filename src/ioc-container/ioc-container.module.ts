@@ -122,7 +122,7 @@ export class MovableImpl implements IMovable {
 	}
 	
 	setLocation(position: VectorService): void {
-		throw new Error('Not implemented');
+		throw new Error(`Not implemented ${position}`);
 	}
 	
 	getVelocity(): VectorService {
