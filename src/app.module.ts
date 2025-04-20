@@ -4,6 +4,7 @@ import { CommandsModule } from './commands/commands.module';
 import { ExceptionsModule } from './exceptions/exceptions.module';
 import { QueueCommandModule } from '@/commands/queue-command/queue-command.module';
 import { IocContainerModule } from './ioc-container/ioc-container.module';
+import { IocModule } from './ioc/ioc.module';
 
 @Module({
 	imports: [
@@ -12,6 +13,7 @@ import { IocContainerModule } from './ioc-container/ioc-container.module';
 		ExceptionsModule,
 		QueueCommandModule,
 		IocContainerModule,
+		IocModule,
 	],
 })
 export class AppModule {}
