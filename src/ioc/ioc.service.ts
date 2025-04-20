@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { QueueWorkerService } from '@/commands/queue-command/queue-worker/queue-worker.service';
+import { QueueWorkerService } from '@/commands/queue-command/queue-worker.service';
 import { ExceptionsService } from '@/exceptions/exceptions.service';
 import { ICommands } from '@/commands/commands.interface';
 
