@@ -158,6 +158,7 @@ describe('IocService', () => {
       
       // Получаем очередь
       const queue = service['queues'].get('default');
+      expect(queue).toBeDefined();
       
       // Добавляем команды
       service.addToQueue('default', errorCommand);
