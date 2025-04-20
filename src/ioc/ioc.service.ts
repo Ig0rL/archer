@@ -51,7 +51,7 @@ export class IocService {
 			};
 		});
 		
-		this.globalDependencies.set('IoC.ResolveQueue', (args: any[]) => {
+		this.globalDependencies.set('IoC.ResolveQueue', () => {
 			return {
 				execute: () => this.executeAllQueues()
 			};
