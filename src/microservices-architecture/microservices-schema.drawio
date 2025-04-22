@@ -1,0 +1,131 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13">
+  <diagram name="Страница — 1" id="g7NCrywD2pvY5mdn8fSp">
+    <mxGraphModel dx="1188" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b9T_dm52-CihoIPiW3ch-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-1" target="b9T_dm52-CihoIPiW3ch-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="190" />
+              <mxPoint x="480" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-1" value="&lt;b&gt;API GATEWAY&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-2" value="&lt;b&gt;CLIENT&lt;/b&gt;&lt;div&gt;Веб приложение UI&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-3" target="b9T_dm52-CihoIPiW3ch-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-3" value="&lt;b&gt;AGENT&lt;/b&gt;&lt;div&gt;Приложение Агент&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.158;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-2" target="b9T_dm52-CihoIPiW3ch-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-13" target="b9T_dm52-CihoIPiW3ch-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="290" />
+              <mxPoint x="170" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-13" target="b9T_dm52-CihoIPiW3ch-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-13" value="&lt;b&gt;Tournament Service&lt;/b&gt;&lt;div&gt;микросервис турниров&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-14" target="b9T_dm52-CihoIPiW3ch-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-14" target="b9T_dm52-CihoIPiW3ch-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="480" />
+              <mxPoint x="250" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-14" value="&lt;b&gt;User Service&lt;/b&gt;&lt;div&gt;Микросервис пользователей&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-15" target="b9T_dm52-CihoIPiW3ch-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="290" />
+              <mxPoint x="330" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-15" target="b9T_dm52-CihoIPiW3ch-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-15" value="&lt;b&gt;Battle Service&lt;/b&gt;&lt;div&gt;Микросервис боев&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-16" target="b9T_dm52-CihoIPiW3ch-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-16" value="&lt;b&gt;Agent Service&lt;/b&gt;&lt;div&gt;Микросервис агентов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-17" target="b9T_dm52-CihoIPiW3ch-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-17" value="&lt;b&gt;Rating Service&lt;/b&gt;&lt;div&gt;Микросервис рейтингов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-18" value="&lt;b&gt;Notification Service&lt;/b&gt;&lt;div&gt;Микросервис уведомлений&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b9T_dm52-CihoIPiW3ch-26" target="b9T_dm52-CihoIPiW3ch-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-26" value="&lt;div&gt;&lt;b&gt;RabbitMQ&lt;/b&gt;&lt;/div&gt;Брокер сообщений" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-32" value="БД&lt;div&gt;&lt;b&gt;Tournament&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="55" y="350" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-33" value="БД&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="220" y="350" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-34" value="БД&lt;div&gt;&lt;b&gt;Battle&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="370" y="350" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-35" value="БД&lt;div&gt;&lt;div&gt;&lt;b&gt;Agent&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="520" y="350" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b9T_dm52-CihoIPiW3ch-36" value="БД&lt;div&gt;&lt;b&gt;Rating&lt;/b&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="670" y="350" width="60" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
