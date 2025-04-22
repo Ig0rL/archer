@@ -7,6 +7,8 @@ import { ChangeVelocityCommandModule } from './change-velocity-command/change-ve
 import { MacroCommandModule } from './macro-command/macro-command.module';
 import { MoveFuelMacroModule } from './move-fuel-macro/move-fuel-macro.module';
 import { RotateCheckVelocityMacroModule } from './rotate-check-velocity-macro/rotate-check-velocity-macro.module';
+import { QueueWorkerService } from '@/commands/queue-command/queue-worker.service';
+import { ExceptionsModule } from '@/exceptions/exceptions.module';
 
 @Module({
 	imports: [
@@ -18,6 +20,9 @@ import { RotateCheckVelocityMacroModule } from './rotate-check-velocity-macro/ro
 		MacroCommandModule,
 		MoveFuelMacroModule,
 		RotateCheckVelocityMacroModule,
+		ExceptionsModule,
 	],
+	providers: [QueueWorkerService],
+	exports: [QueueWorkerService],
 })
 export class CommandsModule {}
