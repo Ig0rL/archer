@@ -7,7 +7,7 @@ export class AuthService {
 		private readonly jwtService: JwtService,
 	) {}
 	
-	getToken(userId: string, gameId: string): string {
+	async getToken(userId: string, gameId: string): Promise<string> {
 		try {
 			const payload = { sub: userId, gameId };
 			return this.jwtService.sign(payload);
