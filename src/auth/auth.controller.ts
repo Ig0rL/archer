@@ -10,7 +10,7 @@ class GetTokenDto {
 	gameId: string;
 }
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
 	constructor(private authService: AuthService) {}
 	
