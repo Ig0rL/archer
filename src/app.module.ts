@@ -21,4 +21,5 @@ import { ExceptionsService } from './exceptions/exceptions.service';
 	controllers: [GameController],
 	providers: [IocService, ExceptionsService],
 })
+
 export class AppModule {}
