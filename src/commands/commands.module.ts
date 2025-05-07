@@ -9,6 +9,7 @@ import { MoveFuelMacroModule } from './move-fuel-macro/move-fuel-macro.module';
 import { RotateCheckVelocityMacroModule } from './rotate-check-velocity-macro/rotate-check-velocity-macro.module';
 import { QueueWorkerService } from '@/commands/queue-command/queue-worker.service';
 import { ExceptionsModule } from '@/exceptions/exceptions.module';
+import { CollisionModule } from '@/commands/collision/collision.module';
 
 @Module({
 	imports: [
@@ -21,6 +22,7 @@ import { ExceptionsModule } from '@/exceptions/exceptions.module';
 		MoveFuelMacroModule,
 		RotateCheckVelocityMacroModule,
 		ExceptionsModule,
+		CollisionModule,
 	],
 	providers: [QueueWorkerService],
 	exports: [QueueWorkerService],
